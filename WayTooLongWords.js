@@ -32,36 +32,11 @@ p43s
 
 
 
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-let n;
-let words = [];
-
-rl.on('line', line => {
-  if (typeof n === 'undefined') {
-    // First line of input, contains the number of words
-    n = parseInt(line);
-  } else {
-    // Subsequent lines, contain a word
-    words.push(line);
-  }
-});
-
-rl.on('close', () => {
-  for (let i = 0; i < n; i++) {
-    const word = words[i];
-    if (word.length > 10) {
-      const firstLetter = word[0];
-      const lastLetter = word[word.length - 1];
-      const middle = word.length - 2;
-      console.log(`${firstLetter}${middle}${lastLetter}`);
-    } else {
-      console.log(word);
-    }
-  }
-});
+x = readline()
+while(x--) 
+{
+    s = readline();
+    if(s.length>10)
+        s = s[0]+(s.length-2)+s[s.length-1]
+    print(s)
+}
