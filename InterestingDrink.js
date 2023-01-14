@@ -27,6 +27,3 @@ for(var i=0; i<q; i++){
 
 
 
-
-console.log(n,x,q,m);
-
