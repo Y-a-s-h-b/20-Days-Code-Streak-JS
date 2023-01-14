@@ -15,7 +15,6 @@ for(var i=0; i<q; i++){
         }   
     }
     console.log(a.length)
-    
 }
 
 
